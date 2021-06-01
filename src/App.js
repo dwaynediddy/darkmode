@@ -6,19 +6,24 @@ import { GlobalStyles } from './constants/global'
 
 function App() {
   const [theme, setTheme] = useState('light')
+  const [text, setText] = useState('Light mode')
 
   const toggleTheme = () => {
     if (theme === 'light') {
       setTheme('dark')
+      setText('Press for Light mode')
     } else {
       setTheme('light')
+      setText('Press for Dark mode')
     }
   }
+
+
   return (
     <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
       <>
       <GlobalStyles />
-      <button onClick={toggleTheme}>toggle theme</button>
+      <button onClick={toggleTheme}>{text}</button>
       <h1>Its a light theme</h1>
       </>
     </ThemeProvider>

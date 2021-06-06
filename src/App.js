@@ -24,7 +24,7 @@ function App() {
       <>
       <GlobalStyles />
       <button onClick={toggleTheme}>{text}</button>
-      <h1>Its a light theme</h1>
+      <h1>Dwaynes Trello Board</h1>
       </>
     </ThemeProvider>
   );

@@ -28,7 +28,7 @@ function App() {
           <h1>Dwaynes Trello Board</h1>
         <main className="trello">
         <Board id="Board-1" className="board">
-            <Card id="card-1" className="card" draggable="false">
+            <Card id="card" className="card" draggable="false">
               <p>To-Do</p>
             </Card>
             <Card id="card-1" className="card" draggable="true">
@@ -37,7 +37,7 @@ function App() {
           </Board>
 
           <Board id="Board-2" className="board">
-            <Card id="card-1" className="card" draggable="false">
+            <Card id="card" className="card" draggable="false">
               <p>Doing</p>
             </Card>
             <Card id="card-2" className="card" draggable="true">
@@ -46,7 +46,7 @@ function App() {
           </Board>
 
           <Board id="Board-3" className="board">
-            <Card id="card-1" className="card" draggable="false">
+            <Card id="card" className="card" draggable="false">
               <p>Done</p>
             </Card>
             <Card id="card-3" className="card" draggable="true">

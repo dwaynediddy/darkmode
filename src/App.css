@@ -40,6 +40,6 @@
   margin-bottom: 15px;
 }
 
-.trello .card .cardText {
+.trello .card p {
   color: #000;
 }

@@ -8,7 +8,7 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     body {
-        align-items: center;
+        /* align-items: center; */
         background: ${({ theme }) => theme.body};
         color: ${({ theme }) => theme.text};
         display: flex;

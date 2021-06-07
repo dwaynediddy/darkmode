@@ -26,22 +26,22 @@ function App() {
     <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
           <button onClick={toggleTheme}>{text}</button>
           <h1>Dwaynes Trello Board</h1>
-          <main className="trello">
+        <main className="trello">
         <Board id="Board-1" className="board">
             <Card id="card-1" className="card" draggable="true">
-              <p>Card one</p>
+              <p className="cardText">Card one</p>
             </Card>
           </Board>
 
           <Board id="Board-2" className="board">
             <Card id="card-2" className="card" draggable="true">
-              <p>Card two</p>
+              <p className="cardText">Card two</p>
             </Card>
           </Board>
 
           <Board id="Board-3" className="board">
             <Card id="card-3" className="card" draggable="true">
-              <p>Card three</p>
+              <p className="cardText">Card three</p>
             </Card>
           </Board>
       <GlobalStyles />

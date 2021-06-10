@@ -1,11 +1,16 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState } from 'react'
 
 const modeButton = () => {
+    const [text, setText] = useState('Light mode')
+
+    const buttonTextHandler = e => {
+        setText('Dark Mode')
+    }
+
     return (
-        <div>
-            
-        </div>
+        <button onClick={buttonTextHandler}>{text}</button>
     )
 }
 
 export default modeButton
+

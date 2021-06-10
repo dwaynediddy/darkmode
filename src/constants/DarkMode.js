@@ -27,7 +27,7 @@ const DarkMode = () => {
   useEffect(() => {
     const localTheme = window.localStorage.getItem('theme');
     localTheme && setTheme(localTheme);
-  }, []);
+  }, [])
   
   return (
   <ThemeProvider theme={themeMode}>

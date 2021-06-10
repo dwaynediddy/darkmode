@@ -11,9 +11,17 @@ const Form = () => {
     }
 
     const addTodo = e => {
+        
         e.preventDefault()
         
-        setTodo('')
+        const newTodo = setTodo('')
+        console.log(newTodo)
+        if(newTodo.text !== '') {
+            let newTodos = [...todo, newTodos]
+            setTodo({newTodos})
+
+        }
+        
     }
 
 

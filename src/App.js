@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './App.css';
 import { ThemeProvider } from 'styled-components'
 import { lightTheme, darkTheme } from './constants/theme'
@@ -14,11 +14,10 @@ function App() {
   const [theme, toggleTheme] = useDarkMode('light')
   const themeMode = theme === 'light' ? lightTheme : darkTheme
 
-  const [text, setText] = useState('Light mode')
 
   return (
     <ThemeProvider theme={themeMode}>
-          <button onClick={toggleTheme}>{text}</button>
+          <button onClick={toggleTheme}>text</button>
           <h1>Dwaynes Trello Board</h1>
         <main className="trello">
         <Board id="Board-1" className="board">

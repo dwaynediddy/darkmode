@@ -16,7 +16,7 @@ const Form = () => {
         
         const newTodo = setTodo('')
         console.log(newTodo)
-        if(newTodo.text !== '') {
+        if(newTodo !== '') {
             let newTodos = [...todo, newTodos]
             setTodo({newTodos})
 
@@ -28,7 +28,6 @@ const Form = () => {
     return (
         <>
         {/* need on submit to create a new card with the submitted input */}
-            {/* if dark mode changes text to white and cant see it */}
             <h5>{todo}</h5>
             <main className="trello">
         <Board id="Board-1" className="board">
